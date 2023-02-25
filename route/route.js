@@ -32,7 +32,4 @@ router.delete('/users/:userId/cart', auth.userAuthentication, cartController.del
 router.post('/users/:userId/orders', auth.userAuthentication, orderController.createOrder)
 router.put('/users/:userId/orders', auth.userAuthentication,orderController.updateOrder)
 
-
-
-
 module.exports = router;
